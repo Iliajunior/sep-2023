@@ -67,19 +67,19 @@
 //   console.log(w)
 //
 
-//let users = [
-//    {skills: ['html', 'js', 'java'], name: 'vasya', age: 31, status: false},
-//    {skills: ['html', 'js', 'C#'], name: 'petya', age: 30, status: true},
-//    {skills: ['html', 'js'], name: 'kolya', age: 29, status: true},
-//    {skills: ['html', 'js', 'node'], name: 'olya', age: 28, status: false},
-//    {skills: ['html', 'js'], name: 'max', age: 30, status: true},
-//    {skills: ['html', 'js', 'react'], name: 'anya', age: 31, status: false},
-//    {skills: ['html', 'js', 'react', 'node'], name: 'oleg', age: 28, status: false},
-//    {skills: ['html', 'js', 'react', 'node'], name: 'andrey', age: 29, status: true},
-//    {skills: ['html', 'js', 'react', 'node'], name: 'masha', age: 30, status: true},
-//    {skills: ['html', 'js', 'react', 'node'], name: 'olya', age: 31, status: false},
-//    {skills: ['html', 'js', 'react', 'node'], name: 'max', age: 31, status: true}
-//];
+let users = [
+    {skills: ['html', 'js', 'java'], name: 'vasya', age: 31, status: false},
+    {skills: ['html', 'js', 'C#'], name: 'petya', age: 30, status: true},
+    {skills: ['html', 'js'], name: 'kolya', age: 29, status: true},
+    {skills: ['html', 'js', 'node'], name: 'olya', age: 28, status: false},
+    {skills: ['html', 'js'], name: 'max', age: 30, status: true},
+    {skills: ['html', 'js', 'react'], name: 'anya', age: 31, status: false},
+    {skills: ['html', 'js', 'react', 'node'], name: 'oleg', age: 28, status: false},
+    {skills: ['html', 'js', 'react', 'node'], name: 'andrey', age: 29, status: true},
+    {skills: ['html', 'js', 'react', 'node'], name: 'masha', age: 30, status: true},
+    {skills: ['html', 'js', 'react', 'node'], name: 'olya', age: 31, status: false},
+    {skills: ['html', 'js', 'react', 'node'], name: 'max', age: 31, status: true}
+];
 //for (let i = 0; i < users.length; i++) {
 //    const user = users[i];
 //    console.log(user.skills)
@@ -90,14 +90,44 @@
 //            console.log(seconds, minets, )
 //        }
 //    }
- let car = {
-     id: 1,
-     model: 'subaru',
-     power: 234,
-     status: true,
-     parts: [111, 222, 333]
- };
-for (const carKey in car) {
-
-    console.log(carKey,car[carKey])
+// let car = {
+//     id: 1,
+//     model: 'subaru',
+//     power: 234,
+//     status: true,
+//     parts: [111, 222, 333]
+    // };
+//for (const carKey in car) {
+//
+//    console.log(carKey,car[carKey])
+        //}
+//function creatLi (){
+//    document.write('<ul>');
+//    document.write('<li>items</li>');
+//    document.write('<li>items</li>');
+//    document.write('<li>items</li>');
+//    document.write('<li>items</li>');
+//    document.write('</ul>');
+//}
+//function arr(array){
+//    for (const argument of users) {
+//        document.write(argument)
+//    }
+//}
+//arr()
+function random(radius){
+    let res = radius * radius * Math.PI;
+    console.log(res)
+    return res
 }
+let x = random(20)
+console.log(x)
+function qwerty (){
+    console.log(arguments)
+}
+qwerty('gg',[221,121,124],311)
+qwerty('df','rrrw')
+function poipoi (...item){
+    console.log(item)
+}
+poipoi(12,34,56,78)
