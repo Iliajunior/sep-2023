@@ -45,19 +45,19 @@
 //    default:
 //        console.log('call me')
 //}
-//let users = [
-//    {name: 'vasya', age: 31, status: false},
-//    {name: 'petya', age: 30, status: true},
-//    {name: 'kolya', age: 29, status: true},
-//    {name: 'olya', age: 28, status: false},
-//    {name: 'max', age: 30, status: true},
-//    {name: 'anya', age: 31, status: false},
-//    {name: 'oleg', age: 28, status: false},
-//    {name: 'andrey', age: 29, status: true},
-//    {name: 'masha', age: 30, status: true},
-//    {name: 'olya', age: 31, status: false},
-//    {name: 'max', age: 31, status: true}
-//    ]
+let users = [
+    {name: 'vasya', age: 31, status: false},
+    {name: 'petya', age: 30, status: true},
+    {name: 'kolya', age: 29, status: true},
+    {name: 'olya', age: 28, status: false},
+    {name: 'max', age: 30, status: true},
+    {name: 'anya', age: 31, status: false},
+    {name: 'oleg', age: 28, status: false},
+    {name: 'andrey', age: 29, status: true},
+    {name: 'masha', age: 30, status: true},
+    {name: 'olya', age: 31, status: false},
+    {name: 'max', age: 31, status: true}
+    ]
 ///for (let i = 0; i < users.length; i++) {
 ///    const user = users[i];
 ///    if (!user.status)
@@ -67,19 +67,19 @@
 //   console.log(w)
 //
 
-let users = [
-    {skills: ['html', 'js', 'java'], name: 'vasya', age: 31, status: false},
-    {skills: ['html', 'js', 'C#'], name: 'petya', age: 30, status: true},
-    {skills: ['html', 'js'], name: 'kolya', age: 29, status: true},
-    {skills: ['html', 'js', 'node'], name: 'olya', age: 28, status: false},
-    {skills: ['html', 'js'], name: 'max', age: 30, status: true},
-    {skills: ['html', 'js', 'react'], name: 'anya', age: 31, status: false},
-    {skills: ['html', 'js', 'react', 'node'], name: 'oleg', age: 28, status: false},
-    {skills: ['html', 'js', 'react', 'node'], name: 'andrey', age: 29, status: true},
-    {skills: ['html', 'js', 'react', 'node'], name: 'masha', age: 30, status: true},
-    {skills: ['html', 'js', 'react', 'node'], name: 'olya', age: 31, status: false},
-    {skills: ['html', 'js', 'react', 'node'], name: 'max', age: 31, status: true}
-];
+//let users = [
+//    {skills: ['html', 'js', 'java'], name: 'vasya', age: 31, status: false},
+//    {skills: ['html', 'js', 'C#'], name: 'petya', age: 30, status: true},
+//    {skills: ['html', 'js'], name: 'kolya', age: 29, status: true},
+//    {skills: ['html', 'js', 'node'], name: 'olya', age: 28, status: false},
+//    {skills: ['html', 'js'], name: 'max', age: 30, status: true},
+//    {skills: ['html', 'js', 'react'], name: 'anya', age: 31, status: false},
+//    {skills: ['html', 'js', 'react', 'node'], name: 'oleg', age: 28, status: false},
+//    {skills: ['html', 'js', 'react', 'node'], name: 'andrey', age: 29, status: true},
+//    {skills: ['html', 'js', 'react', 'node'], name: 'masha', age: 30, status: true},
+//    {skills: ['html', 'js', 'react', 'node'], name: 'olya', age: 31, status: false},
+//    {skills: ['html', 'js', 'react', 'node'], name: 'max', age: 31, status: true}
+//];
 //for (let i = 0; i < users.length; i++) {
 //    const user = users[i];
 //    console.log(user.skills)
@@ -115,19 +115,36 @@ let users = [
 //    }
 //}
 //arr()
-function random(radius){
-    let res = radius * radius * Math.PI;
-    console.log(res)
-    return res
-}
-let x = random(20)
-console.log(x)
-function qwerty (){
-    console.log(arguments)
-}
-qwerty('gg',[221,121,124],311)
-qwerty('df','rrrw')
-function poipoi (...item){
-    console.log(item)
-}
-poipoi(12,34,56,78)
+//function random(radius){
+//    let res = radius * radius * Math.PI;
+//    console.log(res)
+//    return res
+//}
+//let x = random(20)
+//console.log(x)
+//function qwerty (){
+//    console.log(arguments)
+//}
+//qwerty('gg',[221,121,124],311)
+//qwerty('df','rrrw')
+//function poipoi (...item){
+//    console.log(item)
+//}
+//poipoi(12,34,56,78)
+////////////////
+let s = 'hello hasbent'
+console.log(s.toUpperCase())
+console.log(s.toLowerCase())
+console.log(s.startsWith('he'))
+console.log(s[4])
+console.log(s.endsWith('nt'))
+let split = s.split(' ')
+console.log(split)
+let b = []
+console.log(Array.isArray(b))
+    let v = {}
+console.log(Array.isArray(v))
+let newUser = users.filter(value => value.age>30)
+console.log(newUser)
+users.forEach(value =>console.log(value))
+console.log(users === newUser)
