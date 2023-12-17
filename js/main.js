@@ -132,19 +132,25 @@ let users = [
 //}
 //poipoi(12,34,56,78)
 ////////////////
-let s = 'hello hasbent'
-console.log(s.toUpperCase())
-console.log(s.toLowerCase())
-console.log(s.startsWith('he'))
-console.log(s[4])
-console.log(s.endsWith('nt'))
-let split = s.split(' ')
-console.log(split)
-let b = []
-console.log(Array.isArray(b))
-    let v = {}
-console.log(Array.isArray(v))
-let newUser = users.filter(value => value.age>30)
-console.log(newUser)
-users.forEach(value =>console.log(value))
-console.log(users === newUser)
+//let s = 'hello hasbent'
+//console.log(s.toUpperCase())
+//console.log(s.toLowerCase())
+//console.log(s.startsWith('he'))
+//console.log(s[4])
+//console.log(s.endsWith('nt'))
+//let split = s.split(' ')
+//console.log(split)
+//let b = []
+//console.log(Array.isArray(b))
+//let v = {}
+//console.log(Array.isArray(v))
+//let newUser = users.filter(value => value.age>30)
+//console.log(newUser)
+//users.forEach(value =>console.log(value))
+//console.log(users === newUser)
+console.log('ROK')
+try {
+    console.log(kkk)
+}catch (e){
+    console.log('this Error man')
+}
