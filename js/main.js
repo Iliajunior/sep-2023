@@ -154,3 +154,15 @@ try {
 }catch (e){
     console.log('this Error man')
 }
+let map = users.map((users,index)=>{
+    let stringify=JSON.stringify(users)
+    let usersObj =JSON.parse(stringify)
+    usersObj.id =index+1
+    console.log(usersObj)
+    console.log(users === usersObj)
+    return usersObj
+
+})
+let clon = structuredClone(users)
+console.log(users === clon)
+console.log(clon)
