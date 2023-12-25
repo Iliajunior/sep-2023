@@ -45,19 +45,19 @@
 //    default:
 //        console.log('call me')
 //}
-let users = [
-    {name: 'vasya', age: 31, status: false},
-    {name: 'petya', age: 30, status: true},
-    {name: 'kolya', age: 29, status: true},
-    {name: 'olya', age: 28, status: false},
-    {name: 'max', age: 30, status: true},
-    {name: 'anya', age: 31, status: false},
-    {name: 'oleg', age: 28, status: false},
-    {name: 'andrey', age: 29, status: true},
-    {name: 'masha', age: 30, status: true},
-    {name: 'olya', age: 31, status: false},
-    {name: 'max', age: 31, status: true}
-    ]
+//let users = [
+//    {name: 'vasya', age: 31, status: false},
+//    {name: 'petya', age: 30, status: true},
+//    {name: 'kolya', age: 29, status: true},
+//    {name: 'olya', age: 28, status: false},
+//    {name: 'max', age: 30, status: true},
+//    {name: 'anya', age: 31, status: false},
+//    {name: 'oleg', age: 28, status: false},
+//    {name: 'andrey', age: 29, status: true},
+//    {name: 'masha', age: 30, status: true},
+//    {name: 'olya', age: 31, status: false},
+//    {name: 'max', age: 31, status: true}
+//    ]
 ///for (let i = 0; i < users.length; i++) {
 ///    const user = users[i];
 ///    if (!user.status)
@@ -148,21 +148,118 @@ let users = [
 //console.log(newUser)
 //users.forEach(value =>console.log(value))
 //console.log(users === newUser)
-console.log('ROK')
-try {
-    console.log(kkk)
-}catch (e){
-    console.log('this Error man')
-}
-let map = users.map((users,index)=>{
-    let stringify=JSON.stringify(users)
-    let usersObj =JSON.parse(stringify)
-    usersObj.id =index+1
-    console.log(usersObj)
-    console.log(users === usersObj)
-    return usersObj
+//////////////////////////////////////////////////
+/////////////////////////////////////////////////
+//console.log('ROK')
+//try {
+//    console.log(kkk)
+//}catch (e){
+//    console.log('this Error man')
+//}
+//let map = users.map((users,index)=>{
+//    let stringify=JSON.stringify(users)
+//    let usersObj =JSON.parse(stringify)
+//    usersObj.id =index+1
+//    console.log(usersObj)
+//    console.log(users === usersObj)
+//    return usersObj
+//
+//})
+//let clon = structuredClone(users)
+//console.log(users === clon)
+//console.log(clon)
+/////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+//function User(id,name,age,status,wifeName,wifeAgr){
+//    this.id = id
+//    this.name = name
+//    this.age = age
+//    this.status = status
+//    this.wife = {wifeName, wifeAgr}
+//}
+//let userr = new User(23,'vova',25,true,'olia',24)
+//let user2 = new User(83,'maks',33,true, 'irina',30)
+//console.log(userr)
+//console.log(user2)
+//console.log(user===user2)
+//console.log(typeof userr)
+//let u1 = {
+//    name: 'joni',
+//     greeting(msg){
+//        console.log(`${msg} my name is ${this.name}`)
+//    }
+//}
+// u1.greeting('hello')
+//let u2 = {name: 'tor'}
+//u1.greeting.call(u2,'hello')
+//let greetingCopi = u1.greeting.bind(u2)
+//greetingCopi('hello','my name is')
+//
+//let user3 = {
+//    name:  'kokos',
+//    age:  22
+//}
+//let newUser = Object.create(user3)
+//console.log(user3.name)
+//console.log(user3.age)
+//console.log(newUser.name)
+//console.log(newUser.age)
+//console.log(user3)
+//console.log(newUser)
+//console.log(user3 === newUser)
 
-})
-let clon = structuredClone(users)
-console.log(users === clon)
-console.log(clon)
+
+
+
+class User {
+
+    constructor(id, name, age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+
+    greeting() {
+        console.log(`hello my namre is ${this.name}`);
+    };
+
+    foobar() {
+        return 'foobar';
+    }
+
+}
+
+let user = new User(1, 'kokos', 13);
+console.log(user);
+user.greeting();
+console.log(user.foobar());
+//
+console.log(user);
+
+
+
+ class Client extends User {
+     constructor(id, name, age, login, password) {
+         super(id, name, age);
+         this.login = login;
+         this.password = password;
+     }
+ }
+
+ let client = new Client(1, 'kokos', 123, 'logkokos', '1234');
+ console.log(client)
+ console.log(client.foobar())
+
+
+
+
+let date = new Date();
+console.log(date.getDay());
+console.log(date.getDate());
+console.log(date.getHours());
+console.log(date.getMinutes());
+console.log(date.getSeconds());
+console.log(date.getMilliseconds());
+console.log(date.getTime());
+console.log(date.getMonth());
+
